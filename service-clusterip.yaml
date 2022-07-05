@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nodeserver-service
+  name: nodeserver-service-clusterip
 spec:
   selector:
     app: nodeserver
   type: ClusterIP
   ports:
-  - name: nodeserver-service
+  - name: nodeserver-service-clusterip
     port: 3000
     protocol: TCP
