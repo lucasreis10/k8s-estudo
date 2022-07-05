@@ -7,4 +7,4 @@ metadata:
 spec:
   containers:
     - name: nodeserver
-      image: "lucasc342/node-k8s-estudo:latest"
+      image: "lucasc342/node-k8s-estudo:v2"
