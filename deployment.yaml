@@ -16,4 +16,10 @@ spec:
     spec:
       containers:
         - name: nodeserver
-          image: "lucasc342/node-k8s-estudo:v2"
+          image: "lucasc342/node-k8s-estudo:v3"
+          env:
+            - name: PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: nodeserver-env
+                  key: PORT
