@@ -20,3 +20,5 @@ spec:
           envFrom:
             - configMapRef:
                 name: nodeserver-env
+            - secretRef:
+                name: nodeserver-secret
